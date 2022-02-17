@@ -1,0 +1,326 @@
+/* -------------------
+  全体構造
+------------------- */
+body {
+  background-color: #f7f7f7;
+  color: #000;
+  font-size: 16px;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.content{
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto 60px auto;
+}
+
+/* トップへ戻るボタン */
+.back-top {
+  position: fixed;
+  bottom: 230px;
+  right: 100px;
+ }
+.back-top i{
+  background-color: #fff;
+  color: #000;
+  font-size: 60px;
+  text-align: center;
+  border-radius: 50px;
+}
+ol li{
+  display: inline;
+  margin-right: 5px;
+  font-size: 16px;
+}
+ol{
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+/* スライドショー （ボーダー（周りの枠）を非表示にする）*/
+.bx-wrapper {
+  box-shadow: none;
+  border: none;
+  left: 0;
+  background-color: transparent;
+  margin: 0 auto 30px auto; 
+}
+/* -------------------
+  ヘッダー
+------------------- */
+header{
+  background-color: #000;
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+header .inner{
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+header h1{
+  margin-top: 10px;
+}
+header .navi ul{
+  display: flex;
+  justify-content: space-between;
+  width: 460px;
+}
+header .navi li{
+  padding: 10px;
+  font-size: 20px;
+  margin: 30px auto 10px auto;
+}
+
+header .navi a{
+  color: #fff;
+  text-decoration: none;
+}
+header .navi a:hover{
+  color: #ffdd00;
+}
+
+header .sns ul{
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+  margin: 30px 20px 10px 0;
+}
+
+/* -------------------
+  メイン
+------------------- */
+.others main {
+  width: 780px;
+}
+.others main h2{
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  height: 70px;
+  line-height: 70px;
+  padding-left: 20px;
+}
+main p{
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* -------------------
+  サイド
+------------------- */
+aside {
+  background-color: #fff;
+  width: 400px;
+}
+aside h2{
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  height: 70px;
+  line-height: 70px;
+  padding-left: 20px;
+}
+aside ul{
+  list-style-type: none;
+  margin: 20px 0 0 30px;
+}
+aside li{
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+aside a{
+  color: #000;
+  text-decoration: none;
+}
+aside a:hover{
+  color: #ffdd00;
+}
+/* -------------------
+  フッター
+------------------- */
+footer{
+  background-color: #000;
+  color: #fff;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer address{
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* -------------------
+  トップページ
+------------------- */
+.top{
+  background-color: #fff;
+}
+
+/* -------------------
+  学科紹介
+------------------- */
+.gakka a{
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.gakka a:hover{
+  background-color: #bbb;
+  color: #fff;
+}
+.course1{
+  display: flex;
+  justify-content: space-between;
+}
+.course2{
+  display: flex;
+}
+.course2 a{
+  margin-right: 20px;
+}
+
+/* -------------------
+  美容科
+------------------- */
+
+.othertop{
+  background-color: #fff;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.center{
+  text-align: center;
+}
+
+/* ボタン */
+.botan{
+  background-color: #bbb;
+  margin-bottom: 20px;
+}
+.botan ul{
+  display: flex;
+}
+.botan li{
+  width: 260px;
+  text-align: center;
+  list-style-type: none;
+  border-right: 1px solid #fff;
+ }
+ .botan li:last-child{
+   border-right: none;
+ }
+.botan a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 0;
+}
+.botan a:hover{
+  background-color: #fff;
+  color: #bbb;
+}
+
+ /* 取得できる資格 */
+ .syutokusikaku{
+   display: flex;
+   justify-content: space-between;
+   margin: 20px 0;
+ }
+ .syutokusikaku section{
+   background-color: #fff;
+   width: 240px;
+ }
+ .syutokusikaku section h3{
+   background-color: #bbb;
+   color: #fff;
+   height: 90px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   line-height: 1.5;
+  }
+
+
+/* 施設紹介 */
+  .sisetsu{
+    width: 780px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sisetsu section{
+    width: 380px;
+    background-color: #fff;
+    margin: 20px 0;
+  }
+  .sisetsu h3{
+    font-size: 20px;
+    margin: 20px 0 0 20px;
+  }
+
+/* 年間スケジュール */
+  .schedule{
+    width: 780px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .schedule section{
+    background-color: #fff;
+    width: 380px;
+    margin: 20px 0;
+  }
+  .month-schedule{
+    padding: 20px;
+  }
+  .month-schedule li{
+    list-style-type: none;
+    margin-bottom: 20px;
+    display: flex;
+    line-height: 1.5;
+  }
+  .month-schedule time{
+    margin-right: 20px;
+    width: 38px;
+  }
+/* -------------------
+  アクセス
+------------------- */
+.access{
+  display: flex;
+  margin-top: 20px;
+}
+.access ul{
+width: 390px;
+}
+.access li{
+  margin: 0 0 20px 60px;
+  line-height: 1.5;
+}
+.access a{
+  color: #000;
+}
+.access a:hover{
+  color: #ffdd00;
+}
+/* -------------------
+  入学案内
+------------------- */
+.left a{
+  color: #000;
+}
+.left a:hover{
+  color: #ffdd00;
+}
